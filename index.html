@@ -1,20 +1,19 @@
 <!DOCTYPE html>
-<html lang= "pt-BR">
-    <head>
-        <meta charset="UTF-8">
-        <title>Meu primeiro teste</title>
-    </head>
-    <body>
-        <h1>Olá, mundo!</h1>
-        <p>Esse é meu primeiro teste de HTML</p>
+<html>
+<head>
+    <title>Mini Game - Adivinhe o Número</title>
+</head>
+<body>
 
-        <button onclick="MostrarMensagem()">clique aqui</button>
+    <h1>🎯 Adivinhe o Número (1 a 20)</h1>
 
-        <script>
-            function mostrarMensagem()
-            {
-                alert("funcionou");
-            }
-        </script>
-    </body>
+    <input type="number" id="guess" min="1" max="20">
+    <button onclick="checkGuess()">Enviar</button>
+
+    <p id="message"></p>
+    <p>Tentativas: <span id="attempts">0</span></p>
+
+    <script src="script.js"></script>
+
+</body>
 </html>
