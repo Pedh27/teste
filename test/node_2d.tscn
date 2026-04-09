@@ -33,3 +33,7 @@ texture = ExtResource("2_epypp")
 [node name="CollisionShape2D" type="CollisionShape2D" parent="CharacterBody2D2" unique_id=1456817083]
 position = Vector2(593.75, 587.5)
 shape = SubResource("RectangleShape2D_q6r6c")
+
+[node name="Icon" type="Sprite2D" parent="." unique_id=1186828952]
+position = Vector2(1053, 451)
+texture = ExtResource("2_epypp")
