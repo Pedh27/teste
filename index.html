@@ -259,277 +259,278 @@ const MISSION_LOGIC = {
         check: (e) => e.elec || e.t >= 100 
     },
     "CO2": { 
-        img: "https://images.unsplash.com/photo-1701970947932-d5f730c3c1cb?w=500", 
+        img: "Imagens/CO2.webp", 
         hint: "Dióxido de Carbono: Combustão de C. Requer Temp > 250°C.", 
         check: (e) => e.t >= 250 
     },
     "NH3": {
-        img: "https://images.unsplash.com/photo-1614850523296-d8c1af93d400?w=500",
+        img: "Imagens/NH3.webp",
         hint: "Amônia: N e H. Requer Pressão > 10atm e Catalisador de Ferro (Fe).",
         check: (e) => e.p >= 10 && e.cat === "Fe" 
     },
     "HCl": {
-        img: "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?w=500",
+        img: "Imagens/HCl.webp",
         hint: "Ácido Clorídrico: H e Cl. Requer Temp > 200°C ou Catalisador de Platina (Pt).",
         check: (e) => e.t >= 200 || e.cat === "Pt" 
     },
     "CH4": {
-        img: "https://images.unsplash.com/photo-1737385297545-2a8deb054525?w=500",
+        img: "Imagens/CH4.webp",
         hint: "Metano: C e H. Requer Pressão > 5atm e Temp > 150°C.",
         check: (e) => e.p > 5 && e.t > 150 
     },
     "NaCl": {
-        img: "https://images.unsplash.com/photo-1518110925495-5fe2fda0442c?w=500",
+        img: "Imagens/NaCl.webp",
         hint: "Sal: Sódio + Cloro.",
         check: (e) => e.t >= 25
     },
     "Fe2O3": {
-        img: "https://images.unsplash.com/photo-1581091870620-8c9b1a7e5c8b?w=500",
+        img: "Imagens/Fe2O3.webp",
         hint: "Ferrugem: Ferro e Oxigênio. Requer Temp > 50°C e Radiação (☢️) aceleradora.",
         check: (e) => e.t >= 50 && e.rad
     },
     "O3": {
-        img: "https://images.unsplash.com/photo-1605810230434-7631ac76ec81?w=500",
+        img: "Imagens/O3.webp",
         hint: "Ozônio: Oxigênio puro sob descarga elétrica (⚡).",
         check: (e) => e.elec
     },
     "NO2": {
-        img: "https://images.unsplash.com/photo-1532187863486-abf9dbad1b69?w=500",
+        img: "Imagens/NO2.webp",
         hint: "Dióxido de Nitrogênio: N e O. Requer Temp > 500°C.",
         check: (e) => e.t >= 500
     },
     "SO2": {
-        img: "https://images.unsplash.com/photo-1473341304170-971dccb5ac1e?w=500",
+        img: "Imagens/SO2.webp",
         hint: "Dióxido de Enxofre: S e O. Requer Temp > 300°C.",
         check: (e) => e.t >= 300
     },
     "SO3": {
-        img: "https://images.unsplash.com/photo-1532094349884-543bc11b234d?w=500",
+        img: "Imagens/SO3.webp",
         hint: "Trióxido de Enxofre: S e O. Requer Platina (Pt) como catalisador.",
         check: (e) => e.cat === "Pt"
     },
     "H2O2": {
-        img: "https://images.unsplash.com/photo-1532274402911-5a369e4c4bb5?w=500",
+        img: "Imagens/H2O2.webp",
         hint: "Peróxido de Hidrogênio: H e O. Requer Pressão > 20atm.",
         check: (e) => e.p >= 20
     },
     "NaCl": {
-        img: "https://images.unsplash.com/photo-1596040033229-a9821ebd058d?w=500",
+        img: "Imagens/NaCl.webp",
         hint: "Sal de Cozinha: Na e Cl. Reação espontânea (Temp > 25°C).",
         check: (e) => e.t >= 25
     },
     "MgO": {
-        img: "https://images.unsplash.com/photo-1595435934249-5df7ed86e1c0?w=500",
+        img: "Imagens/MgO.webp",
         hint: "Óxido de Magnésio: Mg e O. Requer Temp > 600°C (Combustão).",
         check: (e) => e.t >= 600
     },
     "CaO": {
-        img: "https://images.unsplash.com/photo-1504711434969-e33886168d9c?w=500",
+        img: "Imagens/CaO.webp",
         hint: "Cal Viva: Ca e O. Requer Temperatura > 800°C.",
         check: (e) => e.t >= 800
     },
     "Fe2O3": {
-        img: "https://images.unsplash.com/photo-1508444845599-5c89863b1c44?w=500",
+        img: "Imagens/Fe2O3.webp",
         hint: "Ferrugem: Ferro e Oxigênio. Requer Temp > 50°C e Radiação (&).",
         check: (e) => e.t >= 50 && e.rad
     },
     "H2SO4": {
-        img: "https://images.unsplash.com/photo-1576086213369-97a306d36557?w=500",
+        img: "Imagens/H2SO4.webp",
         hint: "Ácido Sulfúrico: H, S e O. Requer Pressão > 15atm e Platina (Pt).",
         check: (e) => e.p >= 15 && e.cat === "Pt"
     },
     "HNO3": {
-        img: "https://images.unsplash.com/photo-1532187863486-abf9dbad1b69?w=500",
+        img: "Imagens/HNO3.webp",
         hint: "Ácido Nítrico: H, N e O. Requer Platina (Pt) e Temp > 200°C.",
         check: (e) => e.cat === "Pt" && e.t >= 200
     },
     "C2H2": {
-        img: "https://images.unsplash.com/photo-1563396983906-b3795482a59a?w=500",
+        img: "Imagens/C2H2.webp",
         hint: "Acetileno: C e H. Requer Arco Elétrico (⚡).",
         check: (e) => e.elec
     },
     "C6H6": {
-        img: "https://images.unsplash.com/photo-1532187863486-abf9dbad1b69?w=500",
+        img: "Imagens/C6H6.webp",
         hint: "Benzeno: C e H. Requer Pressão > 40atm e Temp > 400°C.",
         check: (e) => e.p >= 40 && e.t >= 400
     },
     "CH3OH": {
-        img: "https://images.unsplash.com/photo-1582719471384-894fbb16e074?w=500",
+        img: "Imagens/CH3OH.webp",
         hint: "Metanol: C, H e O. Requer Pressão > 50atm e Níquel (Ni).",
         check: (e) => e.p >= 50 && e.cat === "Ni"
     },
     "C2H5OH": {
-        img: "https://images.unsplash.com/photo-1514362545857-3bc16c4c7d1b?w=500",
+        img: "Imagens/C2H5OH.webp",
         hint: "Etanol: C, H e O. Requer Temp > 300°C e Pressão > 60atm.",
         check: (e) => e.t >= 300 && e.p >= 60
     },
     "HCN": {
-        img: "https://images.unsplash.com/photo-1576086213369-97a306d36557?w=500",
+        img: "Imagens/HCN.webp",
         hint: "Cianeto de Hidrogênio: H, C e N. Requer Platina (Pt) e Temp > 1000°C.",
         check: (e) => e.cat === "Pt" && e.t >= 1000
     },
     "PCl3": {
-        img: "https://images.unsplash.com/photo-1532187863486-abf9dbad1b69?w=500",
+        img: "Imagens/PCl3.webp",
         hint: "Tricloreto de Fósforo: P e Cl. Requer Radiação (☢️).",
         check: (e) => e.rad
     },
     "SF6": {
-        img: "https://images.unsplash.com/photo-1605810230434-7631ac76ec81?w=500",
+        img: "Imagens/SF6.webp",
+        hint: "Hexafluoreto de Enxofre: S e F. Requer Pressão > 30atm.",
         hint: "Hexafluoreto de Enxofre: S e F. Requer Pressão > 30atm.",
         check: (e) => e.p >= 30
     },
     "UF6": {
-        img: "https://images.unsplash.com/photo-1550751827-4bd374c3f58b?w=500",
+        img: "Imagens/UF6.webp",
         hint: "Hexafluoreto de Urânio: U e F. Requer Radiação (☢️) constante.",
         check: (e) => e.rad
     },
     "Li2O": {
-        img: "https://images.unsplash.com/photo-1595435934249-5df7ed86e1c0?w=500",
+        img: "Imagens/Li2O.webp",
         hint: "Óxido de Lítio: Li e O. Requer Temp > 450°C.",
         check: (e) => e.t >= 450
     },
     "K2O": {
-        img: "https://images.unsplash.com/photo-1595435934249-5df7ed86e1c0?w=500",
+        img: "Imagens/K2O.webp",
         hint: "Óxido de Potássio: K e O. Requer Temp > 350°C.",
         check: (e) => e.t >= 350
     },
     "CaCO3": {
-        img: "https://images.unsplash.com/photo-1504711434969-e33886168d9c?w=500",
+        img: "Imagens/CaCO3.webp",
         hint: "Calcário: Ca, C e O. Requer Pressão > 25atm.",
         check: (e) => e.p >= 25
     },
     "SiO2": {
-        img: "https://images.unsplash.com/photo-1509114397022-ed747cca3f65?w=500",
+        img: "Imagens/SiO2.webp",
         hint: "Sílica (Areia): Si e O. Requer Temp > 1200°C.",
         check: (e) => e.t >= 1200
     },
     "CS2": {
-        img: "https://images.unsplash.com/photo-1532187863486-abf9dbad1b69?w=500",
+        img: "Imagens/CS2.webp",
         hint: "Dissulfeto de Carbono: C e S. Requer Temp > 900°C.",
         check: (e) => e.t >= 900
     },
     "NI3": {
-        img: "https://images.unsplash.com/photo-1532187863486-abf9dbad1b69?w=500",
+        img: "Imagens/NI3.webp",
         hint: "Triiodeto de Nitrogênio: N e I. Requer Temp < 0°C (Estabilidade).",
         check: (e) => e.t <= 0
     },
     "HeH": {
-        img: "https://images.unsplash.com/photo-1462331940025-496dfbfc7564?w=500",
+        img: "Imagens/HeH.webp",
         hint: "Hidreto de Hélio: He e H. Requer Radiação (&) extrema.",
         check: (e) => e.rad
     },
     "Al2O3": {
-        img: "https://images.unsplash.com/photo-1595435934249-5df7ed86e1c0?w=500",
+        img: "Imagens/Al2O3.webp",
         hint: "Alumina: Al e O. Requer Eletricidade (⚡) e Temp > 900°C.",
         check: (e) => e.elec && e.t >= 900
     },
     "AgCl": {
-        img: "https://images.unsplash.com/photo-1518709766631-a6a7f45921c3?w=500",
+        img: "Imagens/AgCl.webp",
         hint: "Cloreto de Prata: Ag e Cl. Reage sob Radiação (☢️).",
         check: (e) => e.rad
     },
     "CO": {
-        img: "https://images.unsplash.com/photo-1563396983906-b3795482a59a?w=500",
+        img: "Imagens/CO.webp",
         hint: "Monóxido de Carbono: C e O. Requer Temp > 700°C e Pressão < 1atm.",
         check: (e) => e.t >= 700 && e.p <= 1
     },
     "CuSO4": {
-        img: "https://images.unsplash.com/photo-1550751827-4bd374c3f58b?w=500",
+        img: "Imagens/CuSO4.webp",
         hint: "Sulfato de Cobre: Cu, S e O. Requer Pressão > 10atm e Temp > 150°C.",
         check: (e) => e.p >= 10 && e.t >= 150
     },
     "Na2CO3": {
-        img: "https://images.unsplash.com/photo-1596040033229-a9821ebd058d?w=500",
+        img: "Imagens/Na2CO3.webp",
         hint: "Carbonato de Sódio: Na, C e O. Requer Temp > 800°C.",
         check: (e) => e.t >= 800
     },
     "BaSO4": {
-        img: "https://images.unsplash.com/photo-1595435934249-5df7ed86e1c0?w=500",
+        img: "Imagens/BaSO4.webp",
         hint: "Sulfato de Bário: Ba, S e O. Requer Pressão > 20atm e Radiação (☢️).",
         check: (e) => e.p >= 20 && e.rad
     },
     "PbS": {
-        img: "https://images.unsplash.com/photo-1504711434969-e33886168d9c?w=500",
+        img: "Imagens/PbS.webp",
         hint: "Sulfeto de Chumbo: Pb e S. Requer Temp > 600°C.",
         check: (e) => e.t >= 600
     },
     "ZnO": {
-        img: "file:///C:/Users/ALUNO/Downloads/foto.png",
+        img: "Imagens/ZnO.webp",
         hint: "Óxido de Zinco: Zn e O. Requer Temp > 500°C e Eletricidade (⚡).",
         check: (e) => e.t >= 500 && e.elec
     },
     "FeS2": {
-        img: "https://images.unsplash.com/photo-1508444845599-5c89863b1c44?w=500",
+        img: "Imagens/FeS2.webp",
         hint: "Pirita: Fe e S. Requer Temp > 400°C e Pressão > 5atm.",
         check: (e) => e.t >= 400 && e.p >= 5
     },
     "C3H8": {
-        img: "https://images.unsplash.com/photo-1563396983906-b3795482a59a?w=500",
+        img: "Imagens/C3H8.webp",
         hint: "Propano: C e H. Requer Temp > 200°C e Pressão > 20atm.",
         check: (e) => e.t >= 200 && e.p >= 20
     },
     "C4H10": {
-        img: "https://images.unsplash.com/photo-1563396983906-b3795482a59a?w=500",
+        img: "Imagens/C4H10.webp",
         hint: "Butano: C e H. Requer Temp > 250°C e Pressão > 25atm.",
         check: (e) => e.t >= 250 && e.p >= 25
     },
     "C5H12": {
-        img: "https://images.unsplash.com/photo-1563396983906-b3795482a59a?w=500",
+        img: "Imagens/C5H12.webp",
         hint: "Pentano: C e H. Requer Temp > 300°C e Pressão > 30atm.",
         check: (e) => e.t >= 300 && e.p >= 30
     },
     "C6H14": {
-        img: "https://images.unsplash.com/photo-1563396983906-b3795482a59a?w=500",
+        img: "Imagens/C6H14.webp",
         hint: "Hexano: C e H. Requer Temp > 350°C e Pressão > 35atm.",
         check: (e) => e.t >= 350 && e.p >= 35
     },
     "C7H16": {
-        img: "https://images.unsplash.com/photo-1563396983906-b3795482a59a?w=500",
+        img: "Imagens/C7H16.webp",
         hint: "Heptano: C e H. Requer Temp > 400°C e Pressão > 40atm.",
         check: (e) => e.t >= 400 && e.p >= 40
     },
     "O2": {
-        img: "https://images.unsplash.com/photo-1563396983906-b3795482a59a?w=500",
+        img: "Imagens/O2.webp",
         hint: "Oxigênio: O. Reage com quase tudo! Use ⚡, Temp > 100°C ou Pressão > 5atm.",
         check: (e) => e.elec || e.t >= 100 || e.p >= 5
     },
     "Au2O3": {
-        img: "https://images.unsplash.com/photo-1518709766631-a6a7f45921c3?w=500",
+        img: "Imagens/Au2O3.webp",
         hint: "Óxido de Ouro: Au e O. Requer Temp > 700°C e Eletricidade (⚡).",
         check: (e) => e.t >= 700 && e.elec
     },
     "PtCl4": {
-        img: "https://images.unsplash.com/photo-1518709766631-a6a7f45921c3?w=500",
+        img: "Imagens/PtCl4.webp",
         hint: "Tetracloreto de Platina: Pt e Cl. Requer Radiação (☢️) e Temp > 300°C.",
         check: (e) => e.rad && e.t >= 300
     },
     "NiCO4": {
-        img: "https://images.unsplash.com/photo-1550751827-4bd374c3f58b?w=500",
+        img: "Imagens/NiCO4.webp",
         hint: "Tetracarbonil de Níquel: Ni e CO. Requer Temp < 50°C e Pressão > 10atm.",
         check: (e) => e.t < 50 && e.p > 10
     },
     "FeCO5": {
-        img: "https://images.unsplash.com/photo-1550751827-4bd374c3f58b?w=500",
+        img: "Imagens/FeCO5.webp",
         hint: "Pentacarbonil de Ferro: Fe e CO. Requer Temp < 100°C e Eletricidade (⚡).",
         check: (e) => e.t < 100 && e.elec
     },
     "I2O5": {
-        img: "https://images.unsplash.com/photo-1532187863486-abf9dbad1b69?w=500",
+        img: "Imagens/I2O5.webp",
         hint: "Pentóxido de Diiodo: I e O. Requer Temp > 400°C e Radiação (☢️).",
         check: (e) => e.t >= 400 && e.rad
     },
     "Al2ClPu6": {
-        img: "https://images.unsplash.com/photo-1550751827-4bd374c3f58b?w=500",
+        img: "Imagens/Al2ClPu6.webp",
         hint: "Hexacloreto de Plutônio e Alumínio: Al, Pu e Cl. Requer Radiação (&) e Temp > 500°C.",
         check: (e) => e.rad && e.t >= 500
     },
     "AuPt": {
-        img: "https://images.unsplash.com/photo-1518709766631-a6a7f45921c3?w=500",
+        img: "Imagens/AuPt.webp",
         hint: "Aliança de Ouro e Platina: Au e Pt. Requer Eletricidade (⚡) e Pressão > 50atm.",
         check: (e) => e.elec && e.p > 50
     },
     "FePt3": {
-        img: "https://images.unsplash.com/photo-1550751827-4bd374c3f58b?w=500",
+        img: "Imagens/FePt3.webp",
         hint: "Ligas de Ferro e Platina: Fe e Pt. Requer Temp > 800°C e Pressão > 20atm.",
         check: (e) => e.t >= 800 && e.p > 20
     }
