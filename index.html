@@ -499,43 +499,12 @@ const MISSION_LOGIC = {
         hint: "Óxido de Ouro: Au e O. Requer Temp > 700°C e Eletricidade (⚡).",
         check: (e) => e.t >= 700 && e.elec
     },
-    "PtCl4": {
-        img: "Imagens/PtCl4.webp",
-        hint: "Tetracloreto de Platina: Pt e Cl. Requer Radiação (☢️) e Temp > 300°C.",
-        check: (e) => e.rad && e.t >= 300
-    },
-    "NiCO4": {
-        img: "Imagens/NiCO4.webp",
-        hint: "Tetracarbonil de Níquel: Ni e CO. Requer Temp < 50°C e Pressão > 10atm.",
-        check: (e) => e.t < 50 && e.p > 10
-    },
-    "FeCO5": {
-        img: "Imagens/FeCO5.webp",
-        hint: "Pentacarbonil de Ferro: Fe e CO. Requer Temp < 100°C e Eletricidade (⚡).",
-        check: (e) => e.t < 100 && e.elec
-    },
-    "I2O5": {
-        img: "Imagens/I2O5.webp",
-        hint: "Pentóxido de Diiodo: I e O. Requer Temp > 400°C e Radiação (☢️).",
-        check: (e) => e.t >= 400 && e.rad
-    },
-    "Al2ClPu6": {
-        img: "Imagens/Al2ClPu6.webp",
-        hint: "Hexacloreto de Plutônio e Alumínio: Al, Pu e Cl. Requer Radiação (&) e Temp > 500°C.",
-        check: (e) => e.rad && e.t >= 500
-    },
     "AuPt": {
         img: "Imagens/AuPt.webp",
         hint: "Aliança de Ouro e Platina: Au e Pt. Requer Eletricidade (⚡) e Pressão > 50atm.",
         check: (e) => e.elec && e.p > 50
     },
-    "FePt3": {
-        img: "Imagens/FePt3.webp",
-        hint: "Ligas de Ferro e Platina: Fe e Pt. Requer Temp > 800°C e Pressão > 20atm.",
-        check: (e) => e.t >= 800 && e.p > 20
-    }
-};
-
+}
 let currentGoal = "H2O";
 let zIndexCounter = 100;
 const workspace = document.getElementById("workspace");
